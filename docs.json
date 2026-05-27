@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Senda Docs",
   "colors": {
-    "primary": "#8B2A26",
-    "light": "#E5A934",
-    "dark": "#2A6B5C"
+    "primary": "#561217",
+    "light": "#F8B735",
+    "dark": "#2C6E63"
   },
   "favicon": "/favicon.svg",
   "navigation": {
