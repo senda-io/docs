@@ -7,6 +7,16 @@
     "light": "#F8B735",
     "dark": "#2C6E63"
   },
+  "fonts": {
+    "heading": {
+      "family": "Figtree",
+      "weight": 700
+    },
+    "body": {
+      "family": "Merriweather",
+      "weight": 400
+    }
+  },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
