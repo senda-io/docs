@@ -1,33 +1,25 @@
 ---
 title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+description: "Senda's REST API — resource-oriented URLs, JSON responses, and Bearer-token authentication"
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+Senda's REST API is organized around standard resource-oriented URLs, returns JSON-encoded responses, and leverages standard HTTP response codes and authentication patterns.
 
-## Welcome
+Our staging sandboxes and live processors are separated by prefix-level key discrimination (`sk_test_` vs `sk_live_`).
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+## Service Base URLs
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+All API calls must target the canonical gateway:
 
-## Authentication
+- **Production API base:** `https://api.sendapay.io/v1`
+- **Local Dev API base:** `http://localhost:8080/v1`
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+## API Authentication
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
+Authenticate your API requests by including your secret key in the `Authorization` header of all server-to-server requests:
+
+```http
+Authorization: Bearer sk_test_your_secret_key
 ```
+
+Never expose your secret keys (`sk_`) in client-side code, mobile applications, or frontend bundles. Use your publishable keys (`pk_`) exclusively for client-side SDK initializations.
