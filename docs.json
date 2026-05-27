@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Senda Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#8B2A26",
+    "light": "#E5A934",
+    "dark": "#2A6B5C"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -95,13 +95,13 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://sendapay.io/support"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://dashboard.sendapay.io"
     }
   },
   "contextual": {
@@ -118,9 +118,9 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/sendapay",
+      "github": "https://github.com/senda-io",
+      "linkedin": "https://linkedin.com/company/sendapay"
     }
   }
 }
